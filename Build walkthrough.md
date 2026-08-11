@@ -1,3 +1,4 @@
+<img width="368" height="211" alt="tf variable screenshot" src="https://github.com/user-attachments/assets/7dc22c22-2a7f-4844-8012-3b59c83c5812" />
 ## Build Walkthrough
 
 
