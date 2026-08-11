@@ -1,4 +1,4 @@
-<img width="368" height="211" alt="tf variable screenshot" src="https://github.com/user-attachments/assets/7dc22c22-2a7f-4844-8012-3b59c83c5812" />
+
 ## Build Walkthrough
 
 
@@ -30,6 +30,8 @@ Variables were created so that values such as the , AMI ID and EC2 instance type
 This makes the Terraform configuration more reusable and avoids hard-coding configuration values directly into the resources.
 
 
+<img width="489" height="414" alt="tf main part 1 screenshot" src="https://github.com/user-attachments/assets/ffa9e558-1bc6-4125-abad-60b621646b23" />
+
 
 
 
@@ -51,6 +53,10 @@ Outbound traffic was also allowed so that the EC2 instance could access the inte
 This was particularly important because the WordPress installation script needs internet access to update packages and download WordPress.
 
 
+<img width="489" height="414" alt="tf main part 1 screenshot" src="https://github.com/user-attachments/assets/f6f053f8-6ec2-4dc1-9b00-7c76d74c4459" />
+<img width="479" height="600" alt="tf main part 2 screenshot" src="https://github.com/user-attachments/assets/de322753-1a2d-4e71-bd3a-16600beacb38" />
+
+
 
 # 6. WordPress Installation with User Data
 A userdata.sh script was used to automatically configure the EC2 instance when it was launched.
@@ -65,6 +71,7 @@ The script:
     8.    Restarts Apache.
 The script allows the EC2 instance to configure itself automatically after Terraform creates it.
 
+<img width="651" height="440" alt="tf userdata screenshot" src="https://github.com/user-attachments/assets/22534250-a816-40e2-a611-ee346a3d5f41" />
 
 
 # 7. Terraform Deployment
@@ -91,11 +98,19 @@ This confirmed that:
     •    The EC2 instance had working outbound internet connectivity.
 
 
+<img width="471" height="214" alt="tf outputs code screenshot" src="https://github.com/user-attachments/assets/bf0b49a6-ee10-40d6-a7f6-f9085a2231fd" />
+
+
 
 
 # 10. Verification Result
+
 The final result was a working WordPress installation deployed using Terraform.
 The deployment demonstrated how Terraform can be used to provision an EC2 instance, configure networking and security, generate SSH access, and automatically install software using EC2 user data.
+
+<img width="409" height="63" alt="tf output screenshot" src="https://github.com/user-attachments/assets/29774f12-415b-43b0-89ea-ad5e9cdae8c3" />
+
+<img width="1263" height="678" alt="tf wordpress screenshot" src="https://github.com/user-attachments/assets/0b565ad4-69e9-4aa5-90e4-51e3ce1beb46" />
 
 
 
