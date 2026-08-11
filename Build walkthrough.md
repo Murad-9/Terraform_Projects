@@ -31,7 +31,7 @@ Variables were created so that values such as the , AMI ID and EC2 instance type
 This makes the Terraform configuration more reusable and avoids hard-coding configuration values directly into the resources.
 
 
-<img width="489" height="414" alt="tf main part 1 screenshot" src="https://github.com/user-attachments/assets/ffa9e558-1bc6-4125-abad-60b621646b23" />
+<img width="368" height="211" alt="tf variable screenshot" src="https://github.com/user-attachments/assets/35d1b9c9-0410-4e83-acdf-f1dacb05d41a" />
 
 
 
@@ -55,8 +55,8 @@ This was particularly important because the WordPress installation script needs 
 
 
 <img width="489" height="414" alt="tf main part 1 screenshot" src="https://github.com/user-attachments/assets/f6f053f8-6ec2-4dc1-9b00-7c76d74c4459" />
-<img width="479" height="600" alt="tf main part 2 screenshot" src="https://github.com/user-attachments/assets/de322753-1a2d-4e71-bd3a-16600beacb38" />
 
+<img width="479" height="600" alt="tf main part 2 screenshot" src="https://github.com/user-attachments/assets/1093555f-a40e-42d5-a58d-ac36474634ab" />
 
 
 # 6. WordPress Installation with User Data
