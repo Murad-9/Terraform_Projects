@@ -4,6 +4,7 @@
 
 # 1. Project Structure
 The project was organised into separate Terraform configuration files to keep the infrastructure configuration easy to understand and maintain.
+
 wordpress-terraform/
 ├── main.tf
 ├── variables.tf
