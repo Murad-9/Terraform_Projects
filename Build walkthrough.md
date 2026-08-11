@@ -114,5 +114,24 @@ The deployment demonstrated how Terraform can be used to provision an EC2 instan
 <img width="1263" height="678" alt="tf wordpress screenshot" src="https://github.com/user-attachments/assets/0b565ad4-69e9-4aa5-90e4-51e3ce1beb46" />
 
 
+# Challenges
 
+The initial deployment did not successfully install WordPress.
+The EC2 instance was running, but the installation script was unable to download packages from the Ubuntu repositories or download WordPress.
+The instance logs showed connection timeouts when attempting to reach external internet addresses.
+The AWS networking configuration was investigated, including:
+    •    The subnet
+    •    Route table
+    •    Internet Gateway
+    •    Network ACL
+    •    Public IPv4 address
+    •    Security Group
+The subnet had a route to the Internet Gateway and the EC2 instance had a public IPv4 address. The Network ACL was also allowing traffic.
+The issue was eventually identified as the Security Group having no outbound rule.
+An outbound rule allowing all traffic to 0.0.0.0/0 was added
+}
+After applying the change, outbound connectivity was tested from the EC2 instance:
+curl -4 https://google.com
+The command successfully returned HTML content, confirming that the EC2 instance could reach the internet.
+The WordPress installation was then successful and the WordPress configuration page became accessible.
 
